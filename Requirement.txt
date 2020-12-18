@@ -1,0 +1,22 @@
+1. Requirement in 1st version
+
+	reference website : https://www.internet-radio.com/
+
+	Players: has the function to add streams, and it will generate title, artist, etc..
+		http://preview.codecanyon.net/item/shout-html5-radio-player-with-ads-shoutcast-and-icecast-support/full_screen_preview/20522568
+
+		http://preview.codecanyon.net/item/radio-player-with-playlist-shoutcast-and-icecast/full_screen_preview/8157195
+
+	filters and radio list
+	php script to add Stream url from my database to website
+	
+	home, category, become a DJ, and search box
+		beocme a DJ just contact us form
+		categories = genre, feature, popular, DJ, news
+		make sure that php version can accept RTL languages (Yes rtl for main tabs only)
+	i will need simple fast php website, we must try to list many radios in one page
+	have to add our app link, and social media buttons somewhere in site
+	not login, just links, FB link, and download the app from gogole link, things like this
+	i might need one small option to add in php, "request a song" contact form, which will be avialble only for private DJS sections
+	we will have list of radios like the refernce, right?
+	each will be able to played on same page, without refresh?
