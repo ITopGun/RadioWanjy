@@ -1,0 +1,8 @@
+[16-Dec-2020 00:24:36 Europe/London] PHP Warning:  mysqli::__construct(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/radiowan/public_html/admin_portal/api/api.php on line 31
+[16-Dec-2020 00:24:36 Europe/London] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/radiowan/public_html/admin_portal/api/api.php on line 32
+[16-Dec-2020 00:24:36 Europe/London] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/radiowan/public_html/admin_portal/api/api.php on line 174
+[16-Dec-2020 00:24:36 Europe/London] PHP Warning:  XRADIO_API::get_list(): Couldn't fetch mysqli in /home/radiowan/public_html/admin_portal/api/api.php on line 174
+[16-Dec-2020 00:24:43 Europe/London] PHP Warning:  mysqli::__construct(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/radiowan/public_html/admin_portal/api/api.php on line 31
+[16-Dec-2020 00:24:43 Europe/London] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/radiowan/public_html/admin_portal/api/api.php on line 32
+[16-Dec-2020 00:24:43 Europe/London] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/radiowan/public_html/admin_portal/api/api.php on line 174
+[16-Dec-2020 00:24:43 Europe/London] PHP Warning:  XRADIO_API::get_list(): Couldn't fetch mysqli in /home/radiowan/public_html/admin_portal/api/api.php on line 174
