@@ -1,0 +1,1490 @@
+/*
+available controllers:
+	- darkHover
+	- lightHover
+*/
+
+.the_wrapper {
+	/*border:1px solid #FFF000;*/
+	overflow: visible !important;
+}
+
+
+/* the container */
+.audio8_html5 {
+	/*background:#0000CC;
+	padding:5px;*/
+}
+.audio8_html5 a {
+    -webkit-transition: none 0s;
+    transition: none 0s;
+	margin:0 !important;
+	padding: 0 !important;
+	border:none !important;
+}
+.audio8_html5 * {
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.audio8_html5_sticky {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	bottom: 0px;
+	left: 0px;
+	margin-left: 0;
+}
+/*.audio8_html5_min {
+	position:absolute;
+	right:10px;
+	bottom:100px;
+	z-index:9999999;
+	cursor:pointer;
+}*/
+
+
+
+.xaudioplaylist {
+	display:none;
+}
+
+/* jquery ui styles */
+.ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	margin-left:-0.6em;
+	cursor: default;
+	outline: none;
+}
+
+.ui-slider-range {
+	display:block;
+	width:100%;
+	height:100%;
+	left:0;
+	bottom: 0;
+	border:0 none;
+	position:absolute;
+	z-index:1;
+}
+
+.ui-progressbar {
+	/*height: 5px;*/
+}
+.ui-progressbar-value {
+	height:100%;
+}
+
+
+.lbg_border_radius {
+	/*border-style:hidden;
+	border-width:0px;	*/
+	border-style:solid;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-ms-border-radius: 150px;
+	color:transparent;
+}
+
+
+
+
+
+/* darkHover */
+.audio8_html5.darkHover {
+	float: left;
+	position: relative;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	color:#FFF;
+	margin:0;
+	padding:0;
+	/*
+	-webkit-transition: all 1s ease;
+	      -moz-transition: all 1s ease;
+	      -o-transition: all 1s ease;
+	      -ms-transition: all 1s ease;
+	      transition: all 1s ease;
+	*/
+}
+
+.audio8_html5.darkHover .AudioCloseBut {
+	top:-21px !important;
+	width:110px;
+	height:21px;
+	position:absolute;
+	right:0;
+	cursor:pointer;
+	text-align:center;
+	color:#333; /*available param 'minButtonColor' */
+	font-size:11px;
+	font-weight:bold;
+	line-height:20px;
+	pointer-events: auto !important;
+	/*background:url(controllers/darkHover/close-off.png) no-repeat;
+	border:1px solid #090;*/
+}
+.audio8_html5.darkHover .AudioCloseBut:hover {
+	color:#F00;
+}
+
+.audio8_html5.darkHover .audio8_html5_arrow_div {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	margin: 6px 10px 3px 10px;
+}
+.audio8_html5.darkHover .audio8_html5_arrow_down {
+	border-top: 8px solid #333; /*available param 'minButtonColor' */
+}
+.audio8_html5.darkHover .audio8_html5_arrow_up {
+	border-bottom: 8px solid #333; /*available param 'minButtonColor' */
+}
+
+/*.audio8_html5.darkHover .AudioOpenBut {
+	background:url(controllers/darkHover/open-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioOpenBut:hover {
+	background:url(controllers/darkHover/open-on.png) no-repeat;
+}*/
+
+.audio8_html5.darkHover .AudioControls {
+	/*clear: both;*/
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+.audio8_html5.darkHover .FrameBehindPlayer {
+	/*clear: both;*/
+	position:absolute;
+	width: 100%;
+	height:20px;
+	margin:0;
+	padding:0;
+}
+
+.audio8_html5.darkHover .FrameBehindPlayerText {
+	/*clear: both;*/
+	position:absolute;
+	width: 100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+
+
+
+.audio8_html5.darkHover .ximage {
+	position:absolute;
+	z-index:3;
+	width: 90px;
+	height: 90px;
+	background-size: 100% 100%;
+}
+
+.audio8_html5.darkHover .xspeakers {
+	position:absolute;
+	z-index:4;
+	width: 600px;
+	height: 90px;
+	background:url(controllers/darkHover/speakers.png) no-repeat;
+}
+.audio8_html5.darkHover .xgradient {
+	width:470px;
+	height:90px;
+	position:absolute;
+	z-index:2;
+	/*background: rgba(245,245,245,1);*/
+}
+
+
+
+.audio8_html5.darkHover .AudioFacebook {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/darkHover/facebook-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioFacebook:hover {
+    background: url(controllers/darkHover/facebook-on.png) no-repeat;
+}
+
+.audio8_html5.darkHover .AudioTwitter {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/darkHover/twitter-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioTwitter:hover {
+    background: url(controllers/darkHover/twitter-on.png) no-repeat;
+}
+
+.audio8_html5.darkHover .AudioPopup {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/darkHover/popup-off.png) no-repeat;
+	border:1px solid #0FC;
+}
+.audio8_html5.darkHover .AudioPopup:hover {
+    background: url(controllers/darkHover/popup-on.png) no-repeat;
+}
+
+
+
+/* play */
+.audio8_html5.darkHover .AudioPlay {
+	/*float:left;*/
+	position:absolute;
+	z-index:3;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width: 80px;
+	height: 80px;
+	background: url(controllers/darkHover/play-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioPlay:hover {
+    background: url(controllers/darkHover/play-on.png) no-repeat;
+}
+
+
+/* pause */
+.audio8_html5.darkHover .AudioPause {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width: 85px;
+	height: 85px;
+	background: url(controllers/darkHover/pause-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioPause:hover {
+	background: url(controllers/darkHover/pause-on.png) no-repeat;
+}
+/* prev */
+.audio8_html5.darkHover .AudioPrev {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: none !important;
+	visibility:hidden !important;
+	margin:0;
+	padding:0;
+	width: 40px;
+	height: 41px;
+	background: url(controllers/darkHover/prev-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioPrev:hover {
+    background: url(controllers/darkHover/prev-on.png) no-repeat;
+}
+/* next */
+.audio8_html5.darkHover .AudioNext {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: none !important;
+	visibility:hidden !important;
+	margin:0;
+	padding:0;
+	width: 40px;
+	height: 41px;
+	background: url(controllers/darkHover/next-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioNext:hover {
+    background: url(controllers/darkHover/next-on.png) no-repeat;
+}
+
+
+
+
+/*show/hide playlist */
+.audio8_html5.darkHover .AudioShowHidePlaylist {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/darkHover/showhideplaylist-off.png) no-repeat;
+}
+.audio8_html5.darkHover .AudioShowHidePlaylist:hover {
+    background: url(controllers/darkHover/showhideplaylist-on.png) no-repeat;
+}
+
+
+
+
+
+
+
+/* volume button Mute & UnMute*/
+.audio8_html5.darkHover .VolumeButton {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width: 19px;
+	height: 19px;
+	background: url(controllers/darkHover/volume-off.png) no-repeat;
+}
+.audio8_html5.darkHover .VolumeButton:hover {
+	background: url(controllers/darkHover/volume-on.png) no-repeat;
+}
+
+.audio8_html5.darkHover .VolumeButtonMuted {
+	background: url(controllers/darkHover/volumeMute-off.png) no-repeat;
+}
+.audio8_html5.darkHover .VolumeButtonMuted:hover {
+	background: url(controllers/darkHover/volumeMute-on.png) no-repeat;
+}
+
+/* volume slider */
+.audio8_html5.darkHover .VolumeSlider {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width:70px;
+	height:4px;
+	/*background: #fff000;*/
+}
+
+.audio8_html5.darkHover .VolumeSlider .ui-slider-handle {
+	display:none;
+}
+
+.audio8_html5.darkHover .VolumeSlider .ui-slider-handle.ui-state-hover {
+	/*background: #fff000;*/
+}
+
+.audio8_html5.darkHover .VolumeSlider .ui-slider-range {
+	position:relative;
+	height:4px;
+	/*background: #00F; blue*/
+}
+
+
+
+
+
+
+/* buffer */
+.audio8_html5.darkHover .AudioBuffer {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	height: 4px;
+	margin:0;
+	padding:0;
+	/*width:100%;*/
+}
+.audio8_html5.darkHover .AudioBuffer .ui-widget-content {  }
+.audio8_html5.darkHover .AudioBuffer .ui-widget-header { /*background:#93C; mauve*/ }
+
+
+/* seek */
+.audio8_html5.darkHover .AudioSeek {
+	/*clear:both;*/
+	cursor: pointer;
+	position:absolute;
+	height: 4px;
+	margin:0;
+	padding:0;
+	/*margin-top:-9px; margin:5px 0px 5px 0px; (AudioBuffer) + height:4px;*/
+}
+
+.audio8_html5.darkHover .AudioSeek .ui-slider-handle {
+	display:none;
+}
+
+.audio8_html5.darkHover .AudioSeek .ui-slider-handle.ui-state-hover {
+	/*background: #fff000;*/
+}
+
+.audio8_html5.darkHover .AudioSeek .ui-slider-range {
+	height:4px;
+}
+
+
+
+/*song Station & Title*/
+.audio8_html5.darkHover .songTitle {
+	position:absolute;
+	float:left;
+	display: block;
+	overflow:hidden;
+	height:14px;
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight: normal;
+	/*border:1px solid #CC6;*/
+}
+
+.audio8_html5.darkHover .songTitleInside {
+	position:absolute;
+	white-space: nowrap;
+	width:auto;
+	text-align:center;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	text-transform:uppercase;
+}
+
+.audio8_html5.darkHover .radioStation {
+	position:absolute;
+	margin-left:0;
+	/*float:left;*/
+	display: block;
+	overflow:hidden;
+	height:12px;
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight: normal;
+	text-align:left;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	text-transform:capitalize;
+	/*border:1px solid #CC6;*/
+}
+
+
+.audio8_html5.darkHover .artistName {
+	position:absolute;
+	margin-left:0;
+	/*float:left;*/
+	display: block;
+	overflow:hidden;
+	height:12px;
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight: normal;
+	text-align:left;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	text-transform:capitalize;
+	/*border:1px solid #000000;*/
+}
+
+
+
+/* playlist */
+.audio8_html5.darkHover .selectedCategDiv {
+	cursor: pointer;
+	margin:0;
+	padding:0px 0px;
+	text-align:center;
+	/*font-size:13px;
+	line-height:1.5;
+	font-weight:bold;*/
+	background-image:url(controllers/darkHover/categories_arrow_bg.png);
+	background-repeat:no-repeat;
+}
+.audio8_html5.darkHover .innerSelectedCategDiv {
+	cursor: pointer;
+	overflow:hidden;
+	height:25px;
+	box-sizing:content-box;
+	width:80%;
+	margin:0;
+	padding:0px 10%;
+	text-align:center;
+	font-size:13px;
+	line-height:1.9;
+	font-weight:bold;
+	background-image:url(controllers/darkHover/categories_arrow_bg.png);
+	background-repeat:no-repeat;
+}
+
+.audio8_html5.darkHover .searchDiv {
+	margin:0;
+	padding:0;
+	background-image:url(controllers/darkHover/search_icon.png);
+	background-repeat:no-repeat;
+	background-position: 10px 50%;
+}
+
+.audio8_html5.darkHover .search_term {
+	   background-color:#FFF;
+     border: 1px solid #333333;
+     color: #000000;
+     font:11px Arial, Helvetica, sans-serif;
+	 	 margin:3px 30px !important;
+     padding: 1px;
+		 height:14px !important;
+}
+
+.audio8_html5.darkHover .thumbsHolderWrapper {
+	position:absolute;
+	height:100%;
+	margin-top:0px;
+	overflow:hidden;
+	z-index:100;
+}
+.audio8_html5.darkHover .thumbsHolderVisibleWrapper {
+	/*position:absolute;*/
+	position:relative;
+	height:100%;
+	overflow:hidden;
+	clear:both;/*new*/
+}
+.audio8_html5.darkHover .thumbsHolder {
+	position:absolute;
+	text-align:left;
+	-webkit-overflow-scrolling: touch;
+}
+/* thumbsOFF */
+.audio8_html5.darkHover .thumbsHolder_ThumbOFF {
+	display:block;
+	height:30px;
+	cursor: pointer;
+	background:#000;
+	overflow:hidden;
+	border-bottom:1px solid #ff0000;
+	line-height:2.5em;
+}
+.audio8_html5.darkHover .thumbsHolder_ThumbOFF  .padding {
+	padding:2px 10px 10px 10px !important;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+}
+
+
+/*  scroller start */
+.audio8_html5.darkHover .slider-vertical {
+	display:none;
+	position:absolute;
+	width:9px;
+	z-index:99999;
+}
+
+.audio8_html5.darkHover .slider-vertical.ui-slider { position: relative;}
+.audio8_html5.darkHover .slider-vertical.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 9px; height: 16px; cursor: pointer; background:url(controllers/darkHover/scrollerFaceOFF.png) 0 0 no-repeat; }
+.audio8_html5.darkHover .slider-vertical.ui-slider .ui-slider-handle:hover {  background:url(controllers/darkHover/scrollerFaceON.png) 0 0 no-repeat; }
+.audio8_html5.darkHover .slider-vertical.ui-slider .ui-slider-range { position: absolute; z-index: 1; display: block; border: 0; }
+
+
+.audio8_html5.darkHover .slider-vertical.ui-slider-vertical { width: 9px; height: 100px; }
+.audio8_html5.darkHover .slider-vertical.ui-slider-vertical .ui-slider-handle { left: 0px; margin-left: 0px; margin-bottom: -16px !important; border: 0; }
+.audio8_html5.darkHover .slider-vertical.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.audio8_html5.darkHover .slider-vertical.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.audio8_html5.darkHover .slider-vertical.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+
+/* Component containers
+----------------------------------*/
+.audio8_html5.darkHover .slider-vertical.ui-widget-content { /*background: #ff7800;*/}
+.audio8_html5.darkHover .slider-vertical .ui-widget-header { /*background: #24ff00;*/ }
+
+
+/* Corner radius */
+.audio8_html5.darkHover .slider-vertical.ui-corner-all {}
+
+/* Interaction states
+----------------------------------
+.audio8_html5.darkHover .slider-vertical.ui-state-default {background: #000000; }
+.audio8_html5.darkHover .slider-vertical.ui-state-hover { background: #FFF000;  }
+*/
+/*  scroller end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* lightHover */
+.audio8_html5.lightHover {
+	float: left;
+	position: relative;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	color:#FFF;
+	margin:0;
+	padding:0;
+}
+
+.audio8_html5.lightHover .AudioCloseBut {
+	top:-21px !important;
+	width:110px;
+	height:21px;
+	position:absolute;
+	right:0;
+	cursor:pointer;
+	text-align:center;
+	color:#333;
+	font-size:11px;
+	font-weight:bold;
+	line-height:20px;
+	pointer-events: auto !important;
+	/*background:url(controllers/lightHover/close-off.png) no-repeat;
+	border:1px solid #090;*/
+}
+.audio8_html5.lightHover .AudioCloseBut:hover {
+	color:#F00;
+}
+
+.audio8_html5.lightHover .audio8_html5_arrow_div {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	margin: 6px 10px 3px 10px;
+}
+.audio8_html5.lightHover .audio8_html5_arrow_down {
+	border-top: 8px solid #F00; /*available param 'minButtonColor' */
+}
+.audio8_html5.lightHover .audio8_html5_arrow_up {
+	border-bottom: 8px solid #333; /*available param 'minButtonColor' */
+}
+
+/*.audio8_html5.lightHover .AudioOpenBut {
+	background:url(controllers/lightHover/open-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioOpenBut:hover {
+	background:url(controllers/lightHover/open-on.png) no-repeat;
+}*/
+
+.audio8_html5.lightHover .AudioControls {
+	/*clear: both;*/
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+.audio8_html5.lightHover .FrameBehindPlayer {
+	/*clear: both;*/
+	position:absolute;
+	width: 100%;
+	height:20px;
+	margin:0;
+	padding:0;
+}
+
+.audio8_html5.lightHover .FrameBehindPlayerText {
+	/*clear: both;*/
+	position:absolute;
+	width: 100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+
+
+
+.audio8_html5.lightHover .ximage {
+	position:absolute;
+	z-index:3;
+	width: 90px;
+	height: 90px;
+	background-size: 100% 100%;
+}
+
+.audio8_html5.lightHover .xspeakers {
+	position:absolute;
+	z-index:4;
+	width: 600px;
+	height: 90px;
+	background:url(controllers/lightHover/speakers.png) no-repeat;
+}
+.audio8_html5.lightHover .xgradient {
+	width:470px;
+	height:90px;
+	position:absolute;
+	z-index:2;
+	/*background: rgba(245,245,245,1);*/
+}
+
+
+
+.audio8_html5.lightHover .AudioFacebook {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/lightHover/facebook-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioFacebook:hover {
+    background: url(controllers/lightHover/facebook-on.png) no-repeat;
+}
+
+.audio8_html5.lightHover .AudioTwitter {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/lightHover/twitter-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioTwitter:hover {
+    background: url(controllers/lightHover/twitter-on.png) no-repeat;
+}
+
+.audio8_html5.lightHover .AudioPopup {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/lightHover/popup-off.png) no-repeat;
+	border:1px solid #0FC;
+}
+.audio8_html5.lightHover .AudioPopup:hover {
+    background: url(controllers/lightHover/popup-on.png) no-repeat;
+}
+
+
+
+/* play */
+.audio8_html5.lightHover .AudioPlay {
+	/*float:left;*/
+	position:absolute;
+	z-index:3;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width: 80px;
+	height: 80px;
+	background: url(controllers/lightHover/play-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioPlay:hover {
+    background: url(controllers/lightHover/play-on.png) no-repeat;
+}
+
+
+/* pause */
+.audio8_html5.lightHover .AudioPause {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width: 85px;
+	height: 85px;
+	background: url(controllers/lightHover/pause-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioPause:hover {
+	background: url(controllers/lightHover/pause-on.png) no-repeat;
+}
+/* prev */
+.audio8_html5.lightHover .AudioPrev {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: none !important;
+	visibility:hidden !important;
+	margin:0;
+	padding:0;
+	width: 40px;
+	height: 41px;
+	background: url(controllers/lightHover/prev-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioPrev:hover {
+    background: url(controllers/lightHover/prev-on.png) no-repeat;
+}
+/* next */
+.audio8_html5.lightHover .AudioNext {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: none !important;
+	visibility:hidden !important;
+	margin:0;
+	padding:0;
+	width: 40px;
+	height: 41px;
+	background: url(controllers/lightHover/next-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioNext:hover {
+    background: url(controllers/lightHover/next-on.png) no-repeat;
+}
+
+
+
+
+/*show/hide playlist */
+.audio8_html5.lightHover .AudioShowHidePlaylist {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	z-index:1;
+	width: 16px;
+	height: 16px;
+	background: url(controllers/lightHover/showhideplaylist-off.png) no-repeat;
+}
+.audio8_html5.lightHover .AudioShowHidePlaylist:hover {
+    background: url(controllers/lightHover/showhideplaylist-on.png) no-repeat;
+}
+
+
+
+
+
+
+
+/* volume button Mute & UnMute*/
+.audio8_html5.lightHover .VolumeButton {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width: 19px;
+	height: 19px;
+	background: url(controllers/lightHover/volume-off.png) no-repeat;
+}
+.audio8_html5.lightHover .VolumeButton:hover {
+	background: url(controllers/lightHover/volume-on.png) no-repeat;
+}
+
+.audio8_html5.lightHover .VolumeButtonMuted {
+	background: url(controllers/lightHover/volumeMute-off.png) no-repeat;
+}
+.audio8_html5.lightHover .VolumeButtonMuted:hover {
+	background: url(controllers/lightHover/volumeMute-on.png) no-repeat;
+}
+
+/* volume slider */
+.audio8_html5.lightHover .VolumeSlider {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	margin:0;
+	padding:0;
+	width:70px;
+	height:4px;
+	/*background: #fff000;*/
+}
+
+.audio8_html5.lightHover .VolumeSlider .ui-slider-handle {
+	display:none;
+}
+
+.audio8_html5.lightHover .VolumeSlider .ui-slider-handle.ui-state-hover {
+	/*background: #fff000;*/
+}
+
+.audio8_html5.lightHover .VolumeSlider .ui-slider-range {
+	position:relative;
+	height:4px;
+	/*background: #00F; blue*/
+}
+
+
+
+
+
+
+/* buffer */
+.audio8_html5.lightHover .AudioBuffer {
+	/*float:left;*/
+	position:absolute;
+	cursor: pointer;
+	display: block;
+	height: 4px;
+	margin:0;
+	padding:0;
+	/*width:100%;*/
+}
+.audio8_html5.lightHover .AudioBuffer .ui-widget-content {  }
+.audio8_html5.lightHover .AudioBuffer .ui-widget-header { /*background:#93C; mauve*/ }
+
+
+/* seek */
+.audio8_html5.lightHover .AudioSeek {
+	/*clear:both;*/
+	cursor: pointer;
+	position:absolute;
+	height: 4px;
+	margin:0;
+	padding:0;
+	/*margin-top:-9px; margin:5px 0px 5px 0px; (AudioBuffer) + height:4px;*/
+}
+
+.audio8_html5.lightHover .AudioSeek .ui-slider-handle {
+	display:none;
+}
+
+.audio8_html5.lightHover .AudioSeek .ui-slider-handle.ui-state-hover {
+	/*background: #fff000;*/
+}
+
+.audio8_html5.lightHover .AudioSeek .ui-slider-range {
+	height:4px;
+}
+
+
+
+/*song Station & Title*/
+.audio8_html5.lightHover .songTitle {
+	position:absolute;
+	float:left;
+	display: block;
+	overflow:hidden;
+	height:14px;
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight: normal;
+	/*border:1px solid #CC6;*/
+}
+
+.audio8_html5.lightHover .songTitleInside {
+	position:absolute;
+	white-space: nowrap;
+	width:auto;
+	text-align:center;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	text-transform:uppercase;
+}
+
+.audio8_html5.lightHover .radioStation {
+	position:absolute;
+	margin-left:0;
+	/*float:left;*/
+	display: block;
+	overflow:hidden;
+	height:12px;
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight: normal;
+	text-align:left;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	text-transform:capitalize;
+	/*border:1px solid #CC6;*/
+}
+
+
+.audio8_html5.lightHover .artistName {
+	position:absolute;
+	margin-left:0;
+	/*float:left;*/
+	display: block;
+	overflow:hidden;
+	height:12px;
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight: normal;
+	text-align:left;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+	text-transform:capitalize;
+	/*border:1px solid #000000;*/
+}
+
+
+
+/* playlist */
+.audio8_html5.lightHover .selectedCategDiv {
+	cursor: pointer;
+	margin:0;
+	padding:0px 0px;
+	text-align:center;
+	/*font-size:13px;
+	line-height:1.5;
+	font-weight:bold;*/
+	background-image:url(controllers/lightHover/categories_arrow_bg.png);
+	background-repeat:no-repeat;
+}
+.audio8_html5.lightHover .innerSelectedCategDiv {
+	cursor: pointer;
+	overflow:hidden;
+	height:25px;
+	box-sizing:content-box;
+	width:80%;
+	margin:0;
+	padding:0px 10%;
+	text-align:center;
+	font-size:13px;
+	line-height:1.9;
+	font-weight:bold;
+	background-image:url(controllers/lightHover/categories_arrow_bg.png);
+	background-repeat:no-repeat;
+}
+
+.audio8_html5.lightHover .searchDiv {
+	margin:0;
+	padding:0;
+	background-image:url(controllers/lightHover/search_icon.png);
+	background-repeat:no-repeat;
+	background-position: 10px 50%;
+}
+
+.audio8_html5.lightHover .search_term {
+	   background-color:#FFF;
+     border: 1px solid #333333;
+     color: #000000;
+     font:11px Arial, Helvetica, sans-serif;
+	   margin:3px 30px !important;
+     padding: 1px;
+		 height:14px !important;
+}
+
+.audio8_html5.lightHover .thumbsHolderWrapper {
+	position:absolute;
+	height:100%;
+	margin-top:0px;
+	overflow:hidden;
+	z-index:100;
+}
+.audio8_html5.lightHover .thumbsHolderVisibleWrapper {
+	/*position:absolute;*/
+	position:relative;
+	height:100%;
+	overflow:hidden;
+	clear:both;/*new*/
+}
+.audio8_html5.lightHover .thumbsHolder {
+	position:absolute;
+	text-align:left;
+	-webkit-overflow-scrolling: touch;
+}
+/* thumbsOFF */
+.audio8_html5.lightHover .thumbsHolder_ThumbOFF {
+	display:block;
+	height:30px;
+	cursor: pointer;
+	background:#000;
+	overflow:hidden;
+	border-bottom:1px solid #ff0000;
+	line-height:2.5em;
+}
+.audio8_html5.lightHover .thumbsHolder_ThumbOFF  .padding {
+	padding:2px 10px 10px 10px !important;
+	font-size:11px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+}
+
+
+/*  scroller start */
+.audio8_html5.lightHover .slider-vertical {
+	display:none;
+	position:absolute;
+	width:9px;
+	z-index:99999;
+}
+
+.audio8_html5.lightHover .slider-vertical.ui-slider { position: relative;}
+.audio8_html5.lightHover .slider-vertical.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 9px; height: 16px; cursor: pointer; background:url(controllers/lightHover/scrollerFaceOFF.png) 0 0 no-repeat; }
+.audio8_html5.lightHover .slider-vertical.ui-slider .ui-slider-handle:hover {  background:url(controllers/lightHover/scrollerFaceON.png) 0 0 no-repeat; }
+.audio8_html5.lightHover .slider-vertical.ui-slider .ui-slider-range { position: absolute; z-index: 1; display: block; border: 0; }
+
+
+.audio8_html5.lightHover .slider-vertical.ui-slider-vertical { width: 9px; height: 100px; }
+.audio8_html5.lightHover .slider-vertical.ui-slider-vertical .ui-slider-handle { left: 0px; margin-left: 0px; margin-bottom: -16px !important; border: 0; }
+.audio8_html5.lightHover .slider-vertical.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.audio8_html5.lightHover .slider-vertical.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.audio8_html5.lightHover .slider-vertical.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+
+/* Component containers
+----------------------------------*/
+.audio8_html5.lightHover .slider-vertical.ui-widget-content { /*background: #ff7800;*/}
+.audio8_html5.lightHover .slider-vertical .ui-widget-header { /*background: #24ff00;*/ }
+
+
+/* Corner radius */
+.audio8_html5.lightHover .slider-vertical.ui-corner-all {}
+
+/* Interaction states
+----------------------------------
+.audio8_html5.lightHover .slider-vertical.ui-state-default {background: #000000; }
+.audio8_html5.lightHover .slider-vertical.ui-state-hover { background: #FFF000;  }
+*/
+/*  scroller end */
+
+
+
+
+
+
+/*
+==============================================
+perspectiveDownZero        Made by Christian Pucci
+==============================================
+*/
+.perspectiveDownZero {
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	-webkit-animation-name: perspectiveDownZero;
+	animation-name: perspectiveDownZero;
+
+	-webkit-animation-duration: 0s;
+	animation-duration: 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes perspectiveDownZero {
+  0% {
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: perspective(0px) rotateX(0deg);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: perspective(0px) rotateX(-180deg);
+  }
+}
+@keyframes perspectiveDownZero {
+  0% {
+    transform-origin: 0 100%;
+    transform: perspective(0px) rotateX(0deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: perspective(0px) rotateX(-180deg);
+  }
+}
+
+
+
+.barsContainer {
+	position:absolute;
+	width:459px;
+	height:60px;
+	z-index:1;
+	top:50%;
+	left:50%;
+	/*-webkit-transform: translate(-50%, 0%);
+	-ms-transform:translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate3d(0, 0 , 0);
+	-ms-transform:translate3d(0, 0 , 0);
+	transform: translate3d(0, 0 , 0);
+    -webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+	-ms-perspective: 1000;
+    perspective: 1000;*/
+}
+
+
+.bars {
+    height: 40px;
+    margin: 0px 0 0 0px;
+    position: absolute;
+    width: 459px;
+	/*border:1px solid #900;*/
+}
+
+
+
+.bar {
+   background: #ffffff;
+    bottom: 0px;
+    height: 0px;
+    position: absolute;
+    width: 4px;
+}
+
+
+.sound {
+	-webkit-animation-name: sound;
+	animation-name: sound;
+
+	-webkit-animation-duration: 0ms;
+	animation-duration: 0ms;
+
+	-webkit-animation-delay: -800ms;
+	-animation-delay: -800ms;
+
+	-webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+	-webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+}
+
+
+
+@keyframes sound {
+    0% {
+       opacity: .90;
+        height: 3px;
+
+	/*-webkit-transform: translate(-50%, 0%);
+	-ms-transform:translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate3d(0, 0 , 0);
+	-ms-transform:translate3d(0, 0 , 0);
+	transform: translate3d(0, 0 , 0);
+    -webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+	-ms-perspective: 1000;
+    perspective: 1000;*/
+    }
+    100% {
+        opacity: 1;
+        height: 38px;
+
+	/*-webkit-transform: translate(-50%, 0%);
+	-ms-transform:translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	-webkit-transform: translate3d(0, 0 , 0);
+	-ms-transform:translate3d(0, 0 , 0);
+	transform: translate3d(0, 0 , 0);
+    -webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+	-ms-perspective: 1000;
+    perspective: 1000; */
+    }
+}
+
+
+
+.sound2 {
+	-webkit-animation-name: sound2;
+	animation-name: sound2;
+
+	-webkit-animation-duration: 0ms;
+	animation-duration: 0ms;
+
+	-webkit-animation-delay: -800ms;
+	-animation-delay: -800ms;
+
+	-webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+	-webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes sound2 {
+    0% {
+       opacity: .10;
+        height: 0px;
+
+	/*-webkit-transform: translate(-50%, 0%);
+	-ms-transform:translate(-50%, 0%);
+	transform: translate(-50%, 0%);*/
+	/*-webkit-transform: translate3d(0, 0 , 0);
+	-ms-transform:translate3d(0, 0 , 0);
+	transform: translate3d(0, 0 , 0);
+    -webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+	-ms-perspective: 1000;
+    perspective: 1000;*/
+    }
+    100% {
+        opacity: .20;
+        height: 15px;
+
+	/*-webkit-transform: translate(-50%, 0%);
+	-ms-transform:translate(-50%, 0%);
+	transform: translate(-50%, 0%);*/
+	/*-webkit-transform: translate3d(0, 0 , 0);
+	-ms-transform:translate3d(0, 0 , 0);
+	transform: translate3d(0, 0 , 0);
+    -webkit-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+	-ms-perspective: 1000;
+    perspective: 1000;  */
+    }
+}
+
+
+/*.bar:nth-child(odd) {
+	 background-color:#F00 !important;
+}
+
+.bar:nth-child(even) {
+	background-color:#00F !important;
+
+}*/
+
+.bar:nth-child(1)  { left: 0px; animation-duration: 464ms;}
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms;}
+.bar:nth-child(3)  { left: 10px; animation-duration: 387ms;}
+.bar:nth-child(4)  { left: 15px; animation-duration: 458ms;}
+.bar:nth-child(5)  { left: 20px; animation-duration: 300ms;}
+.bar:nth-child(6)  { left: 25px; animation-duration: 407ms;}
+.bar:nth-child(7)  { left: 30px; animation-duration: 421ms;}
+.bar:nth-child(8)  { left: 35px; animation-duration: 399ms;}
+.bar:nth-child(9)  { left: 40px; animation-duration: 467ms;}
+.bar:nth-child(10) { left: 45px; animation-duration: 422ms;}
+
+.bar:nth-child(11) { left: 50px; animation-duration: 515ms;}
+.bar:nth-child(12) { left: 55px; animation-duration: 474ms;}
+.bar:nth-child(13) { left: 60px; animation-duration: 433ms;}
+.bar:nth-child(14) { left: 65px; animation-duration: 407ms;}
+.bar:nth-child(15) { left: 70px; animation-duration: 458ms;}
+.bar:nth-child(16) { left: 75px; animation-duration: 400ms;}
+.bar:nth-child(17) { left: 80px; animation-duration: 427ms;}
+.bar:nth-child(18) { left: 85px; animation-duration: 441ms;}
+.bar:nth-child(19) { left: 90px; animation-duration: 419ms;}
+.bar:nth-child(20) { left: 95px; animation-duration: 487ms;}
+
+.bar:nth-child(21) { left: 100px; animation-duration: 412ms;}
+.bar:nth-child(22) { left: 105px; animation-duration: 444ms;}
+.bar:nth-child(23) { left: 110px; animation-duration: 403ms;}
+.bar:nth-child(24) { left: 115px; animation-duration: 377ms;}
+.bar:nth-child(25) { left: 120px; animation-duration: 428ms;}
+.bar:nth-child(26) { left: 125px; animation-duration: 370ms;}
+.bar:nth-child(27) { left: 130px; animation-duration: 377ms;}
+.bar:nth-child(28) { left: 135px; animation-duration: 411ms;}
+.bar:nth-child(29) { left: 140px; animation-duration: 399ms;}
+.bar:nth-child(30) { left: 145px; animation-duration: 457ms;}
+
+.bar:nth-child(31) { left: 150px; animation-duration: 442ms;}
+.bar:nth-child(32) { left: 155px; animation-duration: 474ms;}
+.bar:nth-child(33) { left: 160px; animation-duration: 433ms;}
+.bar:nth-child(34) { left: 165px; animation-duration: 407ms;}
+.bar:nth-child(35) { left: 170px; animation-duration: 458ms;}
+.bar:nth-child(36) { left: 175px; animation-duration: 400ms;}
+.bar:nth-child(37) { left: 180px; animation-duration: 427ms;}
+.bar:nth-child(38) { left: 185px; animation-duration: 441ms;}
+.bar:nth-child(39) { left: 190px; animation-duration: 419ms;}
+.bar:nth-child(40) { left: 195px; animation-duration: 487ms;}
+
+.bar:nth-child(41) { left: 200px; animation-duration: 442ms;}
+.bar:nth-child(42) { left: 205px; animation-duration: 474ms;}
+.bar:nth-child(43) { left: 210px; animation-duration: 433ms;}
+.bar:nth-child(44) { left: 215px; animation-duration: 407ms;}
+.bar:nth-child(45) { left: 220px; animation-duration: 458ms;}
+.bar:nth-child(46) { left: 225px; animation-duration: 400ms;}
+.bar:nth-child(47) { left: 230px; animation-duration: 427ms;}
+.bar:nth-child(48) { left: 235px; animation-duration: 441ms;}
+.bar:nth-child(49) { left: 240px; animation-duration: 419ms;}
+.bar:nth-child(50) { left: 245px; animation-duration: 487ms;}
+
+.bar:nth-child(51) { left: 250px; animation-duration: 442ms;}
+.bar:nth-child(52) { left: 255px; animation-duration: 474ms;}
+.bar:nth-child(53) { left: 260px; animation-duration: 433ms;}
+.bar:nth-child(54) { left: 265px; animation-duration: 407ms;}
+.bar:nth-child(55) { left: 270px; animation-duration: 458ms;}
+.bar:nth-child(56) { left: 275px; animation-duration: 400ms;}
+.bar:nth-child(57) { left: 280px; animation-duration: 427ms;}
+.bar:nth-child(58) { left: 285px; animation-duration: 441ms;}
+.bar:nth-child(59) { left: 290px; animation-duration: 419ms;}
+.bar:nth-child(60) { left: 295px; animation-duration: 487ms;}
+
+.bar:nth-child(61) { left: 300px; animation-duration: 442ms;}
+.bar:nth-child(62) { left: 305px; animation-duration: 474ms;}
+.bar:nth-child(63) { left: 310px; animation-duration: 433ms;}
+.bar:nth-child(64) { left: 315px; animation-duration: 407ms;}
+.bar:nth-child(65) { left: 320px; animation-duration: 458ms;}
+.bar:nth-child(66) { left: 325px; animation-duration: 400ms;}
+.bar:nth-child(67) { left: 330px; animation-duration: 427ms;}
+.bar:nth-child(68) { left: 335px; animation-duration: 441ms;}
+.bar:nth-child(69) { left: 340px; animation-duration: 419ms;}
+.bar:nth-child(70) { left: 345px; animation-duration: 487ms;}
+
+.bar:nth-child(71) { left: 350px; animation-duration: 412ms;}
+.bar:nth-child(72) { left: 355px; animation-duration: 444ms;}
+.bar:nth-child(73) { left: 360px; animation-duration: 403ms;}
+.bar:nth-child(74) { left: 365px; animation-duration: 377ms;}
+.bar:nth-child(75) { left: 370px; animation-duration: 428ms;}
+.bar:nth-child(76) { left: 375px; animation-duration: 370ms;}
+.bar:nth-child(77) { left: 380px; animation-duration: 377ms;}
+.bar:nth-child(78) { left: 385px; animation-duration: 411ms;}
+.bar:nth-child(79) { left: 390px; animation-duration: 399ms;}
+.bar:nth-child(80) { left: 395px; animation-duration: 457ms;}
+
+.bar:nth-child(81) { left: 400px; animation-duration: 412ms;}
+.bar:nth-child(82) { left: 405px; animation-duration: 444ms;}
+.bar:nth-child(83) { left: 410px; animation-duration: 403ms;}
+.bar:nth-child(84) { left: 415px; animation-duration: 377ms;}
+.bar:nth-child(85) { left: 420px; animation-duration: 428ms;}
+.bar:nth-child(86) { left: 425px; animation-duration: 370ms;}
+.bar:nth-child(87) { left: 430px; animation-duration: 377ms;}
+.bar:nth-child(88) { left: 435px; animation-duration: 411ms;}
+.bar:nth-child(89) { left: 440px; animation-duration: 399ms;}
+.bar:nth-child(90) { left: 445px; animation-duration: 457ms;}
+
+.bar:nth-child(91) { left: 450px; animation-duration: 442ms;}
+.bar:nth-child(92) { left: 455px; animation-duration: 474ms;}
+.bar:nth-child(93) { left: 460px; animation-duration: 433ms;}
+/*.bar:nth-child(94) { left: 465px; animation-duration: 407ms;}
+.bar:nth-child(95) { left: 470px; animation-duration: 458ms;}
+/*.bar:nth-child(96) { left: 475px; animation-duration: 500ms;}
+.bar:nth-child(97) { left: 480px; animation-duration: 537ms;}
+.bar:nth-child(98) { left: 485px; animation-duration: 561ms;}
+.bar:nth-child(99) { left: 490px; animation-duration: 591ms;}
+.bar:nth-child(100) { left: 495px; animation-duration: 601ms;}***********/

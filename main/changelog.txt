@@ -1,0 +1,75 @@
+***Version 2.4.0 Release Date: December 04, 2020
+- code improvement for 'now playing' & 'stream title' files
+
+***Version 2.4 Release Date: April 01, 2020
+- now playing feature code improvement
+- modification to compensate the firefox autoplay blocking
+
+***Version 2.3.1 Release Date: February 29, 2020
+- code improvements for 'now playing' feature
+
+***Version 2.3.0 Release Date: February 25, 2020
+- updates for 2020
+
+***Version 2.3 Release Date: September 27, 2019
+- IE11 fix for banner display
+
+***Version 2.2 Release Date: August 16, 2019
+- bug fix when the title was hidden
+
+***Version 2.1 Release Date: May 21, 2019
+- code improvements
+
+***Version 2.0 Release Date: May 07, 2019
+- replaced the LastFM API
+
+***Version 1.6.0 Release Date: May 02, 2019
+- support for HTTPS streams
+
+***Version 1.6 Release Date: March 29, 2019
+- updated the FaceBook API to the latest version 3.2
+- updated the help information regarding FaceBook Share
+
+***Version 1.5 Release Date: February 26, 2019
+- code modifications for the display of the artist image
+
+***Version 1.4.1 Release Date: February 22, 2019
+- bug fix
+
+***Version 1.4.0 Release Date: January 17, 2019
+- code modifications for reading the 'Current Song' features
+
+***Version 1.4 Release Date: December 11, 2018
+- cookie improvement for continuous playback feature
+
+***Version 1.3.0 Release Date: October 01, 2018
+- radio server status checking:  online/offline
+- updated the FaceBook API to the latest version 3.1
+- added FaceBook share parameters
+
+
+﻿***Version 1.2.3.0 Release Date: August 15, 2018
+- added setTimeOut for player loading
+
+***Version 1.2.3 Release Date: June 21, 2018
+- Chrome auto-play restriction for HTML5 audio & video tags fix
+- Safari 11 on Mac auto-play restriction for HTML5 audio & video tags fix
+
+***Version 1.2.2 Release Date: April 20, 2018
+- code improvements for pop-up feature
+
+﻿***Version 1.2.1 Release Date: February 26, 2018
+- bug fix
+
+***Version 1.2 Release Date: February 15, 2018
+- code improvements
+
+﻿***Version 1.1 Release Date: October 06, 2017
+- option to start the player minified
+- option to have the player without ads and artist image
+
+
+***Update - Release Date: September 16, 2017
+- we've added the PSD files for the skins
+
+﻿***Version 1.0 Release Date: August 24, 2017
