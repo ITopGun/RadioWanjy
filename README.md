@@ -14,7 +14,7 @@ We have implemented some basic pages, so you can see.
 - Become a DJ
 - Chat
 - Select Country
-- Icons
+- Search Radio
 - Maps
 - Login
 - Error
