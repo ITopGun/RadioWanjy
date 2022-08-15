@@ -13,7 +13,7 @@ We have implemented some basic pages, so you can see.
 - Category
 - Become a DJ
 - Chat
-- Charts
+- Select Country
 - Icons
 - Maps
 - Login
