@@ -11,7 +11,7 @@ We have implemented some basic pages, so you can see.
 
 - Home
 - Category
-- Tables
+- Become a DJ
 - Notifications
 - Charts
 - Icons
