@@ -29,3 +29,4 @@ $ cd MyApp
 ```
 
 ## How can I support developers?
+- Star our GitHub repo :star:
