@@ -3,4 +3,4 @@ This is radio stream website written in PHP, MySQL. Open sourced and maintained 
 
 [Home page](http://radiowanjy.com/)
 
-[![image](https://prnt.sc/26k_9RPFcNPb)]
+![image](https://user-images.githubusercontent.com/75969744/184570386-f876bc76-7cd3-46cb-8214-fcaa7cd9dad2.png)
