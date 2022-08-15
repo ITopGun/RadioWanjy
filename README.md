@@ -19,3 +19,6 @@ We have implemented some basic pages, so you can see.
 - Live-streaming Radio Plyaer
 
 ## Get the latest version
+
+You can start by cloning the latest version of RadioWanjy on your
+local machine by running:
