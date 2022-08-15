@@ -17,4 +17,3 @@ We have implemented some basic pages, so you can see.
 - Search Radio
 - Language Tab (English/Arabic)
 - Live-streaming Radio Plyaer
-- Error
