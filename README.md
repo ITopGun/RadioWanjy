@@ -22,3 +22,8 @@ We have implemented some basic pages, so you can see.
 
 You can start by cloning the latest version of RadioWanjy on your
 local machine by running:
+
+```shell
+$ git clone https://github.com/ITopGun/RadioWanjy.git MyApp
+$ cd MyApp
+```
