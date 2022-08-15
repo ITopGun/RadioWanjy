@@ -1,5 +1,5 @@
 ## RadioWanjy
-This is radio stream website written in PHP, MySQL. Open sourced and maintained by ITopGun.
+This is radio stream website written in PHP, MySQL. Open sourced and maintained by [ITopGun](https://github.com/ITopGun)
 
 [Home page](http://radiowanjy.com/)
 
