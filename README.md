@@ -15,6 +15,6 @@ We have implemented some basic pages, so you can see.
 - Chat
 - Select Country
 - Search Radio
-- Maps
+- Language Tab (English/Arabic)
 - Login
 - Error
