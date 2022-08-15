@@ -16,5 +16,5 @@ We have implemented some basic pages, so you can see.
 - Select Country
 - Search Radio
 - Language Tab (English/Arabic)
-- Login
+- Live-streaming Radio Plyaer
 - Error
