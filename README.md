@@ -10,7 +10,7 @@ This is radio stream website written in PHP, MySQL. Open sourced and maintained 
 We have implemented some basic pages, so you can see.
 
 - Home
-- Typography
+- Category
 - Tables
 - Notifications
 - Charts
