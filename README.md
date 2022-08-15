@@ -27,3 +27,5 @@ local machine by running:
 $ git clone https://github.com/ITopGun/RadioWanjy.git MyApp
 $ cd MyApp
 ```
+
+## How can I support developers?
