@@ -12,7 +12,7 @@ We have implemented some basic pages, so you can see.
 - Home
 - Category
 - Become a DJ
-- Notifications
+- Chat
 - Charts
 - Icons
 - Maps
