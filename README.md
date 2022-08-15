@@ -31,3 +31,4 @@ $ cd MyApp
 ## How can I support developers?
 - Star our GitHub repo :star:
 - Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow [@ITopGun on Github](https://github.com/ITopGun).
